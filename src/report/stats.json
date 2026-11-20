@@ -1,0 +1,250 @@
+{
+ "edges": [
+  45,
+  50,
+  55,
+  60,
+  65,
+  70,
+  75
+ ],
+ "limitRoad": 68,
+ "whoRoad": 53,
+ "scenarios": {
+  "baseline": {
+   "ground": {
+    "total": 275.4,
+    "classes": [
+     0.282,
+     0.1059,
+     0.2102,
+     0.1455,
+     0.1002,
+     0.0721,
+     0.0718,
+     0.0123
+    ],
+    "overLimit": 0.111,
+    "overWho": 0.503,
+    "under50": 0.3878,
+    "median": 53.1,
+    "energeticMean": 64.1
+   },
+   "envelope": {
+    "total": 1575202,
+    "classes": [
+     0.4576,
+     0.1534,
+     0.1853,
+     0.0944,
+     0.0533,
+     0.0411,
+     0.0132,
+     0.0016
+    ],
+    "overLimit": 0.0297,
+    "overWho": 0.2673,
+    "under50": 0.611,
+    "median": 46.8,
+    "energeticMean": 58.5
+   },
+   "traffic": {
+    "vehKmPerDay": 233369,
+    "hgvKmPerDay": 9378,
+    "meanSpeed": 45.1,
+    "closedKm": 0.0
+   }
+  },
+  "zone30": {
+   "ground": {
+    "total": 275.4,
+    "classes": [
+     0.3092,
+     0.133,
+     0.2158,
+     0.1088,
+     0.1005,
+     0.0737,
+     0.053,
+     0.0059
+    ],
+    "overLimit": 0.0876,
+    "overWho": 0.4271,
+    "under50": 0.4423,
+    "median": 51.5,
+    "energeticMean": 62.8,
+    "delta": {
+     "mean": -1.25,
+     "p10": -2.4,
+     "under3": 0.0023,
+     "under1": 0.6474,
+     "worse": 0.0003
+    }
+   },
+   "envelope": {
+    "total": 1575202,
+    "classes": [
+     0.4932,
+     0.1816,
+     0.1538,
+     0.0779,
+     0.0533,
+     0.0328,
+     0.0065,
+     0.001
+    ],
+    "overLimit": 0.0165,
+    "overWho": 0.221,
+    "under50": 0.6748,
+    "median": 45.3,
+    "energeticMean": 57.0
+   },
+   "traffic": {
+    "vehKmPerDay": 233369,
+    "hgvKmPerDay": 9378,
+    "meanSpeed": 28.8,
+    "closedKm": 0.0
+   }
+  },
+  "light": {
+   "ground": {
+    "total": 275.4,
+    "classes": [
+     0.2887,
+     0.1156,
+     0.2158,
+     0.1471,
+     0.0957,
+     0.0693,
+     0.0608,
+     0.0071
+    ],
+    "overLimit": 0.095,
+    "overWho": 0.4845,
+    "under50": 0.4043,
+    "median": 52.7,
+    "energeticMean": 63.2,
+    "delta": {
+     "mean": -0.57,
+     "p10": -1.62,
+     "under3": 0.0026,
+     "under1": 0.3262,
+     "worse": 0.0
+    }
+   },
+   "envelope": {
+    "total": 1575202,
+    "classes": [
+     0.4679,
+     0.1599,
+     0.1875,
+     0.0921,
+     0.0478,
+     0.0357,
+     0.008,
+     0.0011
+    ],
+    "overLimit": 0.0201,
+    "overWho": 0.2467,
+    "under50": 0.6278,
+    "median": 46.3,
+    "energeticMean": 57.4
+   },
+   "traffic": {
+    "vehKmPerDay": 223991,
+    "hgvKmPerDay": 0,
+    "meanSpeed": 44.9,
+    "closedKm": 0.0
+   }
+  },
+  "car_free": {
+   "ground": {
+    "total": 275.4,
+    "classes": [
+     0.5356,
+     0.0641,
+     0.084,
+     0.0895,
+     0.0909,
+     0.0685,
+     0.0604,
+     0.007
+    ],
+    "overLimit": 0.0945,
+    "overWho": 0.3499,
+    "under50": 0.5997,
+    "median": 40.7,
+    "energeticMean": 63.0,
+    "delta": {
+     "mean": -6.77,
+     "p10": -22.07,
+     "under3": 0.4138,
+     "under1": 0.7702,
+     "worse": 0.0008
+    }
+   },
+   "envelope": {
+    "total": 1575202,
+    "classes": [
+     0.6943,
+     0.0707,
+     0.0759,
+     0.0691,
+     0.0456,
+     0.0353,
+     0.0079,
+     0.0011
+    ],
+    "overLimit": 0.02,
+    "overWho": 0.1902,
+    "under50": 0.765,
+    "median": 30.0,
+    "energeticMean": 57.1
+   },
+   "traffic": {
+    "vehKmPerDay": 195143,
+    "hgvKmPerDay": 0,
+    "meanSpeed": 47.2,
+    "closedKm": 96.2
+   }
+  }
+ },
+ "network": {
+  "byImportance": {
+   "3": {
+    "km": 22.0,
+    "tmja": 8000,
+    "speed": 50
+   },
+   "4": {
+    "km": 14.1,
+    "tmja": 2000,
+    "speed": 30
+   },
+   "5": {
+    "km": 89.3,
+    "tmja": 300,
+    "speed": 30
+   },
+   "6": {
+    "km": 6.9,
+    "tmja": 300,
+    "speed": 30
+   }
+  },
+  "totalKm": 132.3
+ },
+ "buildings": {
+  "count": 11661,
+  "byUsage": {
+   "Résidentiel": 5696,
+   "Indifférencié": 3726,
+   "Commercial et services": 1101,
+   "Annexe": 1075,
+   "Religieux": 30,
+   "Sportif": 17,
+   "Industriel": 16
+  },
+  "medianHeight": 9.0
+ }
+}

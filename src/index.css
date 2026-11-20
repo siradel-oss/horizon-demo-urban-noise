@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/* Report tokens: Siradel 2026 charter values (light mode) plus the paper and rule tints of the document. */
+:root {
+    color-scheme: light;
+    --page: #f5f5f5; /* surface-page */
+    --paper: #ffffff; /* surface-interface */
+    --paper-2: #f0f0f3;
+    --navy: #050038; /* text-headings, surface-brand */
+    --ink: #4a4a4a; /* text-body */
+    --muted: #62626a; /* text-lightest */
+    --rule: #d4d4dc;
+    --rule-strong: #7a7a8a; /* border-default */
+    --focus: #845f00; /* border-focus */
+    --teal: #21b6bb; /* logo accent */
+    --warn-bg: #fff6df;
+    --warn-rule: #e0b84c;
+    --on-dark: #ffffff;
+    --hatch: rgb(5 0 56 / 0.04);
+    --serif: Charter, "Bitstream Charter", "Iowan Old Style", "Sitka Text", Cambria, Georgia, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Running text of the report. */
+.prose-report {
+    font-family: var(--serif);
+    font-size: 16.5px;
+    line-height: 1.65;
+}
+.prose-report p {
+    margin: 0 0 1em;
+    hyphens: auto;
+}
+.prose-report > h2 {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    color: var(--navy);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 1.25rem;
+}
+.prose-report > h3 {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    color: var(--navy);
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 2rem 0 0.75rem;
+}
+.prose-report strong {
+    color: var(--navy);
+}
+.prose-report a {
+    color: var(--navy);
+    text-decoration: underline;
+    text-decoration-color: var(--teal);
+    text-underline-offset: 2px;
+}
+.prose-report ul {
+    margin: 0 0 1em;
+    padding-left: 1.25em;
+    list-style: square;
+}
+.prose-report li {
+    margin-bottom: 0.35em;
+}
+.prose-report li::marker {
+    color: var(--teal);
+}
+
+/* Tables of the report: sans-serif, tabular figures, hairline rules. */
+.table-report {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-size: 12.5px;
+    font-variant-numeric: tabular-nums;
+}
+.table-report th {
+    text-align: left;
+    font-weight: 600;
+    color: var(--navy);
+    border-bottom: 1.5px solid var(--navy);
+    padding: 6px 8px 6px 0;
+    vertical-align: bottom;
+}
+.table-report td {
+    border-bottom: 1px solid var(--rule);
+    padding: 6px 8px 6px 0;
+    vertical-align: top;
+}
+.table-report .num {
+    text-align: right;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+}

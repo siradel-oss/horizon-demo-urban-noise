@@ -1,0 +1,32 @@
+{
+  "name": "horizon-demo-urban-noise",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A noise study report with live 3D figures: road and rail noise on the buildings of central Rennes and three traffic scenarios. A demo of the Horizon 3D engine.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siradel-oss/horizon-demo-urban-noise.git"
+  },
+  "homepage": "https://github.com/siradel-oss/horizon-demo-urban-noise",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@12.11.2",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@siradel-oss/horizon-api": "26.1.0",
+    "@siradel-oss/horizon-core": "26.1.0",
+    "@siradel-oss/horizon-protocol": "26.1.0",
+    "solid-js": "^1.9.17"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.4",
+    "vite-plugin-solid": "^2.11.14"
+  }
+}
